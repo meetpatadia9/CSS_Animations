@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <style>
+            .box{
+                position: relative;
+                top: 2px;
+                left: 2px;
+                background-color: black;
+                height: 100px;
+                width: 100px;
+
+                animation-name: move-anima;
+                animation-duration: 5s;
+                animation-fill-mode: forwards;  
+            }
+
+            @keyframes move-anima{
+                0%{
+                    top:0;
+                    left:0;
+                }
+                25%{
+                    top: 0;
+                    left: 600;
+                    background-color: red;
+                    border-radius: 0 50% 0 0;
+                }
+                50%{
+                    top: 600;
+                    left: 600;
+                    background-color: yellow;
+                    border-radius: 0 50% 50% 0;
+                }
+                75%{
+                    top: 600;
+                    left: 0;
+                    background-color: red;
+                    border-radius: 0 50% 50% 50%;
+                }
+                100%{
+                    top: 0;
+                    left: 0;
+                    background-color: yellow;
+                    border-radius: 50% 50% 50% 50%;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="box"></div>
+    </body>
+</html>
